@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng 20/10 lớp 12A3</title>
+    <link rel="icon" type="image/png" href="./image/heart.png" sizes="16x16" />
+    <link rel="stylesheet" href="./style.css?v=39-4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Importmap cho THREE.js -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+        "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.152.2/examples/jsm/controls/OrbitControls.js",
+        "three/examples/jsm/loaders/FontLoader.js": "https://unpkg.com/three@0.152.2/examples/jsm/loaders/FontLoader.js",
+        "three/examples/jsm/geometries/TextGeometry.js": "https://unpkg.com/three@0.152.2/examples/jsm/geometries/TextGeometry.js"
+      }
+    }
+  </script>
+
+    <style>
+        .text-white {
+            color: white !important;
+        }
+
+        .btn-audio-toggle {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .music-status {
+            display: flex;
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            z-index: 9999;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .music-status .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #a259f7;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.portrait-mode #landscape-warning {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <div id="landscape-warning">
+        <div class="warning-content">
+            <div class="rotate-icon"></div>
+            <h1>Love</h1>
+            <h1>Tinh Cầu</h1>
+            <p style="font-size: 0.6em;">Cậu hãy xoay ngang màn hình nha để thấy điều kỳ diệu!</p>
+            <p style="font-size: 0.6em;">Nhớ chạm vào tinh cầu ở giữa để mở quà bí mật nha.</p>
+            <div class="stars-bg"></div>
+        </div>
+    </div>
+
+    <div id="dark-overlay"></div>
+    <div id="info"></div>
+
+    <script type="module" src="./script.js?v=39-4"></script>
+
+    <p id="scene-hint" aria-live="polite">Chạm vào tinh cầu để bắt đầu ✨</p>
+    <dialog id="letter-dialog" aria-labelledby="letter-title">
+        <div class="letter-paper">
+            <button id="close-letter" type="button" aria-label="Đóng thư">×</button>
+            <div class="letter-seal" aria-hidden="true">♥</div>
+            <p class="letter-eyebrow">MỘT LÁ THƯ GỬI RIÊNG BẠN</p>
+            <!-- SỬA LỜI CHÚC: thay tiêu đề, nội dung và chữ ký bên dưới -->
+            <h1 id="letter-title">Gửi những bông hoa của 12A3</h1>
+            <div class="letter-content">
+                <p>Nhân ngày 20/10, chúc các bạn nữ lớp 12A3 luôn rạng rỡ, hạnh phúc và tự tin theo đuổi những điều mình yêu thích.</p>
+                <p>Cảm ơn các bạn đã làm cho những ngày đến lớp trở nên thật vui và đáng nhớ. Mong rằng thanh xuân của chúng ta sẽ luôn đầy ắp tiếng cười và những kỉ niệm đẹp.</p>
+                <p>Chúc Mừng 20/10! Các bạn xứng đáng với những điều dịu dàng nhất. ♥</p>
+            </div>
+            <p class="letter-signature">Thương gửi,<br><strong>Tập thể lớp 12A3</strong></p>
+        </div>
+    </dialog>
+    <div id="greeting-intro" hidden aria-hidden="true"><canvas id="intro-particles"></canvas></div>
+    <script src="./intro.js?v=39-4"></script>
+    <script src="./experience.js?v=39-4"></script>
+</body>
+</html>

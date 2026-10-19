@@ -1,0 +1,14 @@
+HƯỚNG DẪN – CHÚC MỪNG 20/10 LỚP 12A3
+
+1. Giải nén toàn bộ thư mục. Chạy bằng Live Server trong VS Code hoặc đưa toàn bộ thư mục lên hosting web. Không chỉ tải riêng index.html. Cần Internet để tải Three.js từ CDN như bản gốc.
+2. Nhạc thử tự phát khi mở web; nếu trình duyệt chặn, chạm trang để nhạc bắt đầu. Chạm quả cầu lần đầu: chạy cảnh chữ mở đầu khoảng 23 giây. Khi dòng hướng dẫn đổi, chạm quả cầu lần nữa để mở thư. Đóng bằng dấu ×, Escape hoặc bấm ra ngoài thư. Có thể mở lại thư.
+3. Nhạc đã nằm trong audio/music.mp3 và tự lặp vô hạn khi trang đang mở và trình duyệt cho phép phát. Đã bỏ nút bật/tắt nhạc. Trình duyệt thường không cho phát có tiếng trước khi người dùng chạm; khi điện thoại khóa màn hình hoặc đóng trang, hệ điều hành có thể dừng phát.
+4. Thay ảnh trong image/: 1.png, 2.png, ... 38.png. Đã có đủ 38 ảnh mẫu lấy luân phiên từ 3 ảnh cũ. Dùng ảnh PNG thật, không chỉ đổi đuôi JPG thành PNG. heart.png giữ nguyên bản gốc. Tổng cộng 39 ảnh được dùng trong hiệu ứng.
+5. Sửa thư: mở index.html, tìm SỬA LỜI CHÚC, sửa các đoạn văn, tiêu đề, chữ ký bên dưới.
+6. Sửa chữ quanh hành tinh: tìm Chúc Mừng 20/10 lớp 12A3 trong script.js.
+
+7. Bản cập nhật 39 ảnh: thư dùng Arial hỗ trợ tiếng Việt. Khi thay code trên hosting, tải lại bằng Ctrl+F5 để bỏ bộ nhớ đệm. Giữ mã hóa UTF-8 khi sửa lời chúc.
+
+8. Mở đầu mới: chạm tinh cầu → các hạt sáng tụ thành trái tim → A3-K47 THANH OAI B → trái tim → Chúc Mừng 20/10 / CÁC BÔNG HOA A3-K47 → thiên hà. Tổng khoảng 23 giây. Chạm tinh cầu lần nữa để mở thư. Sửa 3 dòng chữ trong INTRO_COPY ở intro.js.
+
+9. Trong toàn bộ đoạn hạt sáng/trái tim/chữ, dòng chú thích nhỏ phía dưới được ẩn. Kết thúc đoạn mở đầu mới hiện hướng dẫn chạm tinh cầu để mở thư.
